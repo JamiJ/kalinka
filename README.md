@@ -45,15 +45,15 @@ Sekä valitsin että readme.md luodaan automaattisesti ja linsenssiksi valitsin 
 
 ### Asennetaan git meidän xubuntu koneelle.</h3>
 <pre class="prettyprint">sudo apt-get update
-sudo apt-get install git</pre>
+sudo apt-get install git
+sudo apt-get install salt-minion</pre>
 Tein itselleni kansiot github/omat kotikansioon.
 
 Kopioidaan tänne juuri luotu repository, githubista näkee linkin tuosta "clone or download" kohdasta, mikä on merkitty vihreällä.
 
 <pre class="prettyprint">git clone https://github.com/JamiJ/kalinka.git</pre>
+![Clone](https://jernvall.com/wp-content/uploads/2018/05/Git-1.png)
 
-Seuravaaksi git kysyy sinun käyttäjätunnusta ja salasanaa.
-Annettuasi käyttäjätunnuksen ja salasanan git ohjelma cloonaa tämän repositoryn ja olet valmis muokkaamaan näitä tiedostoja, sekä lisäämään uusia.
 
 
 
@@ -73,7 +73,7 @@ Tämä komento ajaa nämä tiedostot, mitä git add komennolla on muokattu uudek
 
 git pull &amp;&amp; git push
 Nämä komennot hakee git repositorystä uudet muokatut tiedostot, jos niitä on muokannut joku toinen henkilö ja puskee nämä meidän muutokset git repositoryyn</pre>
-
+Tämän komennon jälkeen joudut antamaan oman käyttäjätunnuksen, sekä salasanan.
 
 GitHub näyttää myös nämä kaikki korjaukset, mitä on tehty jokaiseen tiedostoon todella hyvin. Jokainen rivi mitä on muokattu, tai jos joitain tiedostoja on lisätty.
 
@@ -91,3 +91,25 @@ Olen muokannut kuvista rajaukset pois, sekä alimmasta kuvasta vanhan html markd
 Sitten vain jatketaan näiden samojen komentojen ajamista ja muokataan tarvittaessa.
 
 ## Tehtävä C) Aja oma salt tila git-varastosta
+### Olen luonut jo aiemmin toisen repositoryn mitä käytän tässä tehtävässä hyväksi
+![GitHub.com/JamiJ/saltexamplelocal](https://github.com/JamiJ/saltexamplelocal)
+
+Tämä repository asentaa saltin avulla apachen, sekä konfiguroi asetustiedostoja siten, että käyttäjien omat kotisivut toimivat ja niissä toimii myös php. Sekä luo tyhjän .txt tiedoston tmp/ kansioon.
+Jos haluat tarkemmin tietää miten salt toimii tai mitä tässä salt tilassa ajetaan. ![Jernvall.com-Viiko2-Palvelinten-Hallinta](https://jernvall.com/2018/04/05/viikko-2-palvelinten-hallinta/) täältä voit katsoa miten olen luonut nämä tiedostot ja mitä ne tekevät.
+Tämän tehtävän tärkein tiedosto on "high.sh" mikä sisältää rivin
+<pre class="prettyprint">salt-call --local state.highstate --file-root srv/salt/</pre>
+Tässä siis ajetaan state.highstate lokaalisti, omalla koneella ja missä käytetään salt tiedostojen paikkana srv/salt kansiota, mikä kloonataan tästä repositorystä.
+
+Voimme siis kloonata tämän tiedoston ajamalla komennon
+<pre class="prettyprint">git clone https://github.com/JamiJ/saltexamplelocal.git</pre>
+ja ajamalla tämän salt tilan komennolla. Muista että sinun pitää olla tämän "saltexamplelocal/" kansion sisällä, jotta tämä komento toimii
+<pre class="prettyprint">sudo bash high.sh</pre>
+Katsotaan mitä tämä kometo luo ja tekee.
+
+![clone](https://jernvall.com/wp-content/uploads/2018/05/clone-1.png)
+
+![Asenneus](https://jernvall.com/wp-content/uploads/2018/05/asennus-1.png)
+
+Näemme, että apache2 asennetaan ja php laitetaan toimimaan käyttäjillä, sekä kotihakemiston sivut.
+
+![Toimii](https://jernvall.com/wp-content/uploads/2018/04/2-1.png)
