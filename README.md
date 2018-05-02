@@ -1,3 +1,6 @@
+Tämä postaus on kopioitu ![jernvall.com](https://jernvall.com/2018/05/02/viikko-5-palvelinten-hallinta-gitn-kayttoa-git-push-git-pull-git-clone/) sivulta.
+Yleensä kirjoitan nämä wordpressiin, mutta tällä kertaa tehtävän aiheena oli kirjoittaa markdownilla.
+
 Viikot pyörivät ja kesä tulee täysilla, vappukin oli välissä. Oliko hyvä vappu?
 Sää oli mukavat +15 ja aurinkoista 8)
 
@@ -92,10 +95,10 @@ Sitten vain jatketaan näiden samojen komentojen ajamista ja muokataan tarvittae
 
 ## Tehtävä C) Aja oma salt tila git-varastosta
 ### Olen luonut jo aiemmin toisen repositoryn mitä käytän tässä tehtävässä hyväksi
-![GitHub.com/JamiJ/saltexamplelocal](https://github.com/JamiJ/saltexamplelocal)
+![JamiJ/saltexamplelocal](https://github.com/JamiJ/saltexamplelocal)
 
 Tämä repository asentaa saltin avulla apachen, sekä konfiguroi asetustiedostoja siten, että käyttäjien omat kotisivut toimivat ja niissä toimii myös php. Sekä luo tyhjän .txt tiedoston tmp/ kansioon.
-Jos haluat tarkemmin tietää miten salt toimii tai mitä tässä salt tilassa ajetaan. ![Jernvall.com-Viiko2-Palvelinten-Hallinta](https://jernvall.com/2018/04/05/viikko-2-palvelinten-hallinta/) täältä voit katsoa miten olen luonut nämä tiedostot ja mitä ne tekevät.
+Jos haluat tarkemmin tietää miten salt toimii tai mitä tässä salt tilassa ajetaan. ![Viiko2-Palvelinten-Hallinta](https://jernvall.com/2018/04/05/viikko-2-palvelinten-hallinta/) täältä voit katsoa miten olen luonut nämä tiedostot ja mitä ne tekevät.
 Tämän tehtävän tärkein tiedosto on "high.sh" mikä sisältää rivin
 <pre class="prettyprint">salt-call --local state.highstate --file-root srv/salt/</pre>
 Tässä siis ajetaan state.highstate lokaalisti, omalla koneella ja missä käytetään salt tiedostojen paikkana srv/salt kansiota, mikä kloonataan tästä repositorystä.
