@@ -61,3 +61,15 @@ Koska, meidän täytyy julkaista tämä B) kohta markdownilla, ruvetaan kirjoitt
 Linkki minun githubin repositoryyn, jota muokkaamme. - [https://github.com/JamiJ/kalinka](https://github.com/JamiJ/kalinka)
 
 Kaikki muokkaukset mitä teemme git:n kanssa, niistä tulee versiohistoria automaattisesti. Muunnan tämän wordpress postauksen markdowniksi ja jatkan kirjottamista GitHubiin, sekä tähän postaukseen.
+GitHub näyttää myös nämä kaikki korjaukset, mitä on tehty jokaiseen tiedostoon todella hyvin. Jokainen rivi mitä on muokattu, tai jos joitain tiedostoja on lisätty.
+
+![Commits](https://jernvall.com/wp-content/uploads/2018/05/commits.png)
+
+Tuolla näkyy tällähetkellä 5 committia, olen siis muuttanut tästä repositorystä tiedostoja viisi kertaa.
+![Commits inside](https://jernvall.com/wp-content/uploads/2018/05/commits-inside.png)
+
+Avataan vaikka tuo "Fixed git repo image file" ja katsotaan mitä muutoksia olen tehnyt.
+
+![FixedRepo](https://jernvall.com/wp-content/uploads/2018/05/fixed-repo.png)
+
+Olen muokannut kuvista rajaukset pois, sekä alimmasta kuvasta vanhan html markdownin pois ja vaihtanut sen githubin markdowniin.
