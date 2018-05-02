@@ -60,7 +60,9 @@ Annettuasi käyttäjätunnuksen ja salasanan git ohjelma cloonaa tämän reposit
 Koska, meidän täytyy julkaista tämä B) kohta markdownilla, ruvetaan kirjoittamaan muokkauksia siis README.md tiedostoon.
 Linkki minun githubin repositoryyn, jota muokkaamme. - [https://github.com/JamiJ/kalinka](https://github.com/JamiJ/kalinka)
 
-Kaikki muokkaukset mitä teemme git:n kanssa, niistä tulee versiohistoria automaattisesti. Muunnan tämän wordpress postauksen markdowniksi ja jatkan kirjottamista GitHubiin, sekä tähän postaukseen.
+#### Kaikki muokkaukset mitä teemme git:n kanssa, niistä tulee versiohistoria automaattisesti. Muunnan tämän wordpress postauksen markdowniksi ja jatkan kirjottamista GitHubiin, sekä tähän postaukseen.
+
+### Muokataan tätä README.md tiedostoa niin näemme mitä tapahtuu
 
 Git toimii siis siten, että kun tämä repository on kloonattu omalle koneelle, muokkaamme tiedostoa ihan perus "nano" komennolla ja sen jälkeen annamme komennot
 <pre class="prettyprint">git add .
@@ -85,3 +87,7 @@ Avataan vaikka tuo "Fixed git repo image file" ja katsotaan mitä muutoksia olen
 ![FixedRepo](https://jernvall.com/wp-content/uploads/2018/05/fixed-repo.png)
 
 Olen muokannut kuvista rajaukset pois, sekä alimmasta kuvasta vanhan html markdownin pois ja vaihtanut sen githubin markdowniin.
+
+Sitten vain jatketaan näiden samojen komentojen ajamista ja muokataan tarvittaessa.
+
+## Tehtävä C) Aja oma salt tila git-varastosta
