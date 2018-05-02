@@ -61,6 +61,18 @@ Koska, meidän täytyy julkaista tämä B) kohta markdownilla, ruvetaan kirjoitt
 Linkki minun githubin repositoryyn, jota muokkaamme. - [https://github.com/JamiJ/kalinka](https://github.com/JamiJ/kalinka)
 
 Kaikki muokkaukset mitä teemme git:n kanssa, niistä tulee versiohistoria automaattisesti. Muunnan tämän wordpress postauksen markdowniksi ja jatkan kirjottamista GitHubiin, sekä tähän postaukseen.
+
+Git toimii siis siten, että kun tämä repository on kloonattu omalle koneelle, muokkaamme tiedostoa ihan perus "nano" komennolla ja sen jälkeen annamme komennot
+<pre class="prettyprint">git add .
+Tämä komento hakee tiedostot joita on muutettu ja lisää ne listalle mitä lähetetään eteenpäin git:llä
+
+git commit
+Tämä komento ajaa nämä tiedostot, mitä git add komennolla on muokattu uudeksi versioksi
+
+git pull &amp;&amp; git push
+Nämä komennot hakee git repositorystä uudet muokatut tiedostot, jos niitä on muokannut joku toinen henkilö ja puskee nämä meidän muutokset git repositoryyn</pre>
+
+
 GitHub näyttää myös nämä kaikki korjaukset, mitä on tehty jokaiseen tiedostoon todella hyvin. Jokainen rivi mitä on muokattu, tai jos joitain tiedostoja on lisätty.
 
 ![Commits](https://jernvall.com/wp-content/uploads/2018/05/commits.png)
