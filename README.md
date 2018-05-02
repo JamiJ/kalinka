@@ -31,16 +31,16 @@ Itselläni on jo käyttäjä luotu GitHubiin koulun tunnuksilla, joten voin skip
 
 Luotuasi käyttäjän, oikealla on valikko "Your repositories" luodaan tänne uusi repository.
 
-![Luo uusi repository](https://jernvall.com/wp-content/uploads/2018/05/CreateNewRepo-300x156.png)
+![Luo uusi repository](https://jernvall.com/wp-content/uploads/2018/05/CreateNewRepo.png)
 
-![Luo uusi repository](https://jernvall.com/wp-content/uploads/2018/05/CreateRepository-300x186.png)
+![Luo uusi repository](https://jernvall.com/wp-content/uploads/2018/05/CreateRepository.png)
 
 Loin repositoryn nimeltä "kalinka".
 Sekä valitsin että readme.md luodaan automaattisesti ja linsenssiksi valitsin GNU GPL v3
 
 
 #### Nyt meillä on tämä repository luotuna ja voimme aloittaa tekemällä siihen muutoksia git:n avulla.
-<img class="alignnone wp-image-609" src="https://jernvall.com/wp-content/uploads/2018/05/repoLuotu-300x188.png" alt="" width="653" height="410" />
+![Repository luotu](https://jernvall.com/wp-content/uploads/2018/05/repoLuotu.png)
 
 
 ### Asennetaan git meidän xubuntu koneelle.</h3>
