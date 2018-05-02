@@ -1,2 +1,63 @@
-# kalinka
-Apache with php mod enabled, 
+Viikot pyörivät ja kesä tulee täysilla, vappukin oli välissä. Oliko hyvä vappu?
+Sää oli mukavat +15 ja aurinkoista 8)
+
+Nyt mennään tehtäviin kuitenkin. Päästään kokeilemaan vähän git:iä.
+
+
+###Tehtävät löytyvät kurssin sivulta - [Terokarvinen.com Palvelinten-Hallinta](terokarvinen.com/2018/aikataulu-%e2%80%93-palvelinten-hallinta-ict4tn022-4-ti-5-ke-5-loppukevat-2018-5p)
+Tässä harjoituksessa luodaan git:n avulla sls tila, mikä cloonataan [GitHubista](http://github.com) ja ajetaan sen jälkeen bash komennolla.
+Joten salt-masteria ei välttämättä tässä tarvita, ellei haluta ajaa tämä tila sen kautta.
+
+
+Käytän testi koneessa [xubuntu-16.04.4-desktop-amd64.iso](http://ftp.lysator.liu.se/ubuntu-dvd/xubuntu/releases/16.04/release/xubuntu-16.04.4-desktop-amd64.iso), mikä on ajettu usbtikulle [UNetBootilla](https://unetbootin.github.io/)
+
+
+##Tehtävät
+##h5
+Poikkeuksellisesti pidempi palautusaika w18 perjantaina 2018-05-04 12:00 asti. Vappupäivänä ei ole opetusta. Hauskaa Wappua!
+
+a) Valitse aihe omaksi kurssityöksi ja varaa se kommenttina aikataulusivun perään.
+
+b) Julkaise raportti MarkDownilla. Jos käytät GitHub:ia, se tekee muotoilun automaattisesti “.md”-päätteisiin dokumentteihin.
+
+c) Aja oma Salt-tila suoraa git-varastosta. Voit joko tehdä tilan alusta lähtien itse tai forkata [sirottimen](https://github.com/terokarvinen/sirotin).
+
+
+
+
+##Tässä harjoituksessa käytämme GitHubia git:n kanssa.
+Luodaan siis käyttäjä GitHubiin.
+Itselläni on jo käyttäjä luotu GitHubiin koulun tunnuksilla, joten voin skipata tämän kohdan.
+
+Luotuasi käyttäjän, oikealla on valikko "Your repositories" luodaan tänne uusi repository.
+
+![Luo uusi repository](https://jernvall.com/wp-content/uploads/2018/05/CreateNewRepo-300x156.png)
+
+![Luo uusi repository](https://jernvall.com/wp-content/uploads/2018/05/CreateRepository-300x186.png)
+
+Loin repositoryn nimeltä "kalinka".
+Sekä valitsin että readme.md luodaan automaattisesti ja linsenssiksi valitsin GNU GPL v3
+
+
+####Nyt meillä on tämä repository luotuna ja voimme aloittaa tekemällä siihen muutoksia git:n avulla.
+<img class="alignnone wp-image-609" src="https://jernvall.com/wp-content/uploads/2018/05/repoLuotu-300x188.png" alt="" width="653" height="410" />
+
+
+###Asennetaan git meidän xubuntu koneelle.</h3>
+<pre class="prettyprint">sudo apt-get update
+sudo apt-get install git</pre>
+Tein itselleni kansiot github/omat kotikansioon.
+
+Kopioidaan tänne juuri luotu repository, githubista näkee linkin tuosta "clone or download" kohdasta, mikä on merkitty vihreällä.
+
+git clone https://github.com/JamiJ/kalinka.git
+
+Seuravaaksi git kysyy sinun käyttäjätunnusta ja salasanaa.
+Annettuasi käyttäjätunnuksen ja salasanan git ohjelma cloonaa tämän repositoryn ja olet valmis muokkaamaan näitä tiedostoja, sekä lisäämään uusia.
+
+
+
+Koska, meidän täytyy julkaista tämä B) kohta markdownilla, ruvetaan kirjoittamaan muokkauksia siis README.md tiedostoon.
+Linkki minun githubin repositoryyn, jota muokkaamme. - [https://github.com/JamiJ/kalinka](https://github.com/JamiJ/kalinka)
+
+Kaikki muokkaukset mitä teemme git:n kanssa, niistä tulee versiohistoria automaattisesti. Muunnan tämän wordpress postauksen markdowniksi ja jatkan kirjottamista GitHubiin, sekä tähän postaukseen.
