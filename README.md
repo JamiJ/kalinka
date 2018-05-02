@@ -50,7 +50,7 @@ Tein itselleni kansiot github/omat kotikansioon.
 
 Kopioidaan tänne juuri luotu repository, githubista näkee linkin tuosta "clone or download" kohdasta, mikä on merkitty vihreällä.
 
-git clone https://github.com/JamiJ/kalinka.git
+<pre class="prettyprint">git clone https://github.com/JamiJ/kalinka.git</pre>
 
 Seuravaaksi git kysyy sinun käyttäjätunnusta ja salasanaa.
 Annettuasi käyttäjätunnuksen ja salasanan git ohjelma cloonaa tämän repositoryn ja olet valmis muokkaamaan näitä tiedostoja, sekä lisäämään uusia.
